@@ -1,0 +1,5 @@
+name = My Core
+description = I did it.
+backdrop = 1.x
+version = 1.x-0.x
+type = module

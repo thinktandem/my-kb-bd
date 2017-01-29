@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * @file my_core.module.
+ *  Run update hooks and system wide functionality for my-bd-bd app.
+ */
+
+ /**
+  * Implements hook_menu().
+  */
+function my_core_menu() {
+  $items = array();
+  $items['geoff'] = array(
+    'title' => 'geoff is the best',
+    'access callback' => TRUE,
+    'page callback' => 'my_core_geoff_is_the_best',
+  );
+
+  return $items;
+}
+
+/**
+ * Page callback for menu item 'geoff'.
+ */
+function my_core_geoff_is_the_best() {
+  $markup = 'geoff is the best.';
+
+  return $markup;
+}

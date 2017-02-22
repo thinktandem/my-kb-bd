@@ -1,13 +1,13 @@
 <?php
 
 /**
- * @file my_core.module.
- *  Run update hooks and system wide functionality for my-bd-bd app.
+ * @file
+ * Run update hooks and system wide functionality for my-bd-bd app.
  */
 
- /**
-  * Implements hook_menu().
-  */
+/**
+ *
+ */
 function my_core_menu() {
   $items = array();
   $items['geoff'] = array(
@@ -22,7 +22,7 @@ function my_core_menu() {
 /**
  * Page callback for menu item 'geoff'.
  */
-function my_core_geoff_is_the_best() {
+function my_core_geoff_is_the_best($gff) {
   $markup = 'geoff is the best.';
 
   return $markup;

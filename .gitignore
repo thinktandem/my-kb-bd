@@ -11,3 +11,7 @@ sites/*/private
 # Ignore the vendor directory #
 ###############################
 /vendor
+
+# Ignore node_modules directory #
+#################################
+/node_modules

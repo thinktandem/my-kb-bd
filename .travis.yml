@@ -5,10 +5,10 @@ php:
 services:
   - docker
 
-before_install:
-
-  # Add our SSH key for deploy func
-  - openssl aes-256-cbc -K $encrypted_b10bc99ab66d_key -iv $encrypted_b10bc99ab66d_iv -in travis.id_rsa.enc -out $HOME/.ssh/travis.id_rsa -d
+# before_install:
+#
+#   # Add our SSH key for deploy func
+#   - openssl aes-256-cbc -K $encrypted_b10bc99ab66d_key -iv $encrypted_b10bc99ab66d_iv -in travis.id_rsa.enc -out $HOME/.ssh/travis.id_rsa -d
 
 install:
 

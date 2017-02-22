@@ -6,7 +6,7 @@
  */
 
 /**
- *
+ * Implements hook_menu().
  */
 function my_core_menu() {
   $items = array();

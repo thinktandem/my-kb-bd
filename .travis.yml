@@ -8,7 +8,8 @@ services:
 before_install:
 
   # Add our SSH key for deploy func
-  - openssl aes-256-cbc -K $encrypted_b10bc99ab66d_key -iv $encrypted_b10bc99ab66d_iv -in travis.id_rsa.enc -out $HOME/.ssh/travis.id_rsa -d
+  #- openssl aes-256-cbc -K $encrypted_b10bc99ab66d_key -iv $encrypted_b10bc99ab66d_iv -in travis.id_rsa.enc -out $HOME/.ssh/travis.id_rsa -d
+  openssl aes-256-cbc -K $encrypted_262c845c1992_key -iv $encrypted_262c845c1992_iv -in travis.id_rsa.enc -out travis.id_rsa -d
 
 install:
 

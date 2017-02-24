@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "69f6ce71b0487071d2a121d3b1262612",
+    "content-hash": "cd1129288b78cf47a24486a6904251ef",
     "packages": [],
     "packages-dev": [
         {
@@ -13,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/klausi/coder.git",
-                "reference": "58b65c0db4a05a0bb7677a3d334525acedf6b98c"
+                "reference": "45fed9b6c7564be52fed141972b6a24a31e34954"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/klausi/coder/zipball/58b65c0db4a05a0bb7677a3d334525acedf6b98c",
-                "reference": "58b65c0db4a05a0bb7677a3d334525acedf6b98c",
+                "url": "https://api.github.com/repos/klausi/coder/zipball/45fed9b6c7564be52fed141972b6a24a31e34954",
+                "reference": "45fed9b6c7564be52fed141972b6a24a31e34954",
                 "shasum": ""
             },
             "require": {
@@ -42,7 +42,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2017-02-19 16:54:48"
+            "time": "2017-02-24T21:55:52+00:00"
         },
         {
             "name": "overtrue/phplint",

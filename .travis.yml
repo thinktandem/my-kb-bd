@@ -23,6 +23,7 @@ script:
 after_success:
 
   # Set up the SSH key and config
+  - mv travis.id_rsa $HOME/.ssh/travis.id_rsa
   - chmod 600 $HOME/.ssh/travis.id_rsa
   - eval "$(ssh-agent)"
   - ssh-add $HOME/.ssh/travis.id_rsa

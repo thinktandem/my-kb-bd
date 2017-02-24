@@ -1,8 +1,8 @@
 <?php
 
 /**
- * @file my_core.module.
- *  Run update hooks and system wide functionality for my-bd-bd app.
+ * @file
+ * Run update hooks and system wide functionality for my-bd-bd app.
  */
 
  /**

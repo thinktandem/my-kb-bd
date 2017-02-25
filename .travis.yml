@@ -37,6 +37,10 @@ after_success:
   - eval "$(ssh-agent)"
   - ssh-add $HOME/.ssh/travis.id_rsa
   - cp -rf ssh-config $HOME/.ssh/config
+  - cd drush && rm -rf .git
+  - cd commands/backdrop && rm -rf .git
+  - cd ../../..
+  - git add -A && git commit -m 'robots for drush and backdrop/drush'
 
   # Set a user for things
   - git config --global user.name "Travis Bot"

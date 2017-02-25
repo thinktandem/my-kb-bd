@@ -16,11 +16,11 @@ install:
   - composer install
 
   # Get drush
-  - git clone git@github.com:drush-ops/drush.git
+  - git clone https://github.com:drush-ops/drush.git
   - cd drush
   - git checkout 8.x
   - composer install
-  - cd commands && git clone git@github.com:backdrop-contrib/drush.git
+  - cd commands && git clone https://github.com:backdrop-contrib/drush.git
   - git checkout dev
 
 script:

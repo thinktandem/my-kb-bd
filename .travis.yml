@@ -22,6 +22,7 @@ install:
   - composer install
   - cd commands && git clone https://github.com/backdrop-contrib/drush.git backdrop
   - cd backdrop && git checkout dev
+  - cd ../../..
 
 script:
 

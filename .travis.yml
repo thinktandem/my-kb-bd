@@ -16,13 +16,13 @@ install:
   - composer install
 
   # Get drush
-  - git clone https://github.com/drush-ops/drush.git
+  - git clone https://github.com/drush-ops/drush.git drush
   - cd drush
   - git checkout 8.x
   - composer install
-  - cd commands && git clone https://github.com/backdrop-contrib/drush.git backdrop
+  - cd drush/commands && git clone https://github.com/backdrop-contrib/drush.git backdrop
   - cd backdrop && git checkout dev
-  - cd ../../..
+  - cd ../../../..
 
 script:
 
@@ -37,9 +37,9 @@ after_success:
   - eval "$(ssh-agent)"
   - ssh-add $HOME/.ssh/travis.id_rsa
   - cp -rf ssh-config $HOME/.ssh/config
-  - cd drush && rm -rf .git
+  - cd drush/drush && rm -rf .git
   - cd commands/backdrop && rm -rf .git
-  - cd ../../..
+  - cd ../../../..
   - git add -A && git commit -m 'robots for drush and backdrop/drush'
 
   # Set a user for things

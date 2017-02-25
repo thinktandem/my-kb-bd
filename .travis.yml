@@ -15,6 +15,10 @@ install:
   # Install composer deps
   - composer install
 
+  # Get drush
+  - git clone git@github.com:drush-ops/drush.git:8.x
+  - cd drush/commands && git clone git@github.com:backdrop-contrib/drush.git:dev
+
 script:
 
   # Run code and styling

@@ -40,19 +40,6 @@ after_success:
   - git remote rm origin
   - git remote add origin git@github.com:thinktandem/my-kb-bd.git
   - git checkout $TRAVIS_BRANCH
-  
-  # Get drush and backdrop-contrib/drush
-  - git clone https://github.com/drush-ops/drush.git drush/drush
-  - cd drush/drush
-  - git checkout 8.x
-  - composer install
-  - cd commands && git clone https://github.com/backdrop-contrib/drush.git backdrop
-  - cd backdrop && git checkout dev
-  - cd ../../../..
-  - cd drush/drush && rm -rf .git
-  - cd commands/backdrop && rm -rf .git
-  - cd ../../../..
-  - git add -A && git commit -m 'robots for drush and backdrop/drush'
 
   # Pull in any remote changes
   - git pull upstream $TRAVIS_BRANCH

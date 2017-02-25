@@ -16,7 +16,6 @@ sites/*/private
 # Ignore the vendor directory #
 ###############################
 /vendor
-/drush
 
 # Ignore node_modules directory #
 #################################
